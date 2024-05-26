@@ -41,7 +41,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.flutter_application_1"
-        minSdkVersion flutter.minSdkVersion
+        minSdkVersion 23
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -59,7 +59,7 @@ flutter {
 }
 
 dependencies {
-    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
+    //implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
 }
 
-apply plugin: 'com.google.gms.google-services' 
+//apply plugin: 'com.google.gms.google-services'  //para login com google

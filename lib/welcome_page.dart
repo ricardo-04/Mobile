@@ -13,7 +13,7 @@ class WelcomePage extends StatelessWidget {
         ),
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
@@ -24,7 +24,7 @@ class WelcomePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
+              const Text(
                 'Bem-vindo!',
                 style: TextStyle(
                   fontSize: 32.0,
@@ -32,12 +32,12 @@ class WelcomePage extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/login'); // Navegar para a página de login
                 },
-                child: Text('Entrar',
+                child: const Text('Entrar',
                 style: TextStyle(
                   color: Color.fromARGB(255, 13, 58, 95),
                 ),

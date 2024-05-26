@@ -4,11 +4,11 @@ import 'login.dart';
 import 'welcome_page.dart';
 import 'contaCreate.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
-//import 'package:firebase_core/firebase_core.dart'; // Adicione esta linha
+//import 'package:firebase_core/firebase_core.dart';
 
-void main() /*async*/ { // Adicione a palavra-chave async aqui
+void main() /*async*/ { //adicionar a palavra-chave async aqui
   WidgetsFlutterBinding.ensureInitialized();
-  //await Firebase.initializeApp(); // Agora isso deve funcionar
+  //await Firebase.initializeApp(); 
   runApp(const MyApp());
 }
 
