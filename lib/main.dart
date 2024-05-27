@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'login.dart';
 import 'welcome_page.dart';
 import 'contaCreate.dart';
+import 'eventosPage.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 //import 'package:firebase_core/firebase_core.dart';
 
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => WelcomePage(), //welcome_page
         '/login': (context) => LoginPage(), //login
         '/contaCreate': (context) => ContaCreate(), //contaCreate
+        '/eventosPage': (context) => EventosPage(), //eventosPage
       },
     );
   }

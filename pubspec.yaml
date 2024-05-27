@@ -61,6 +61,8 @@ flutter:
   assets:
     - assets/logo-softinsa.png
     - assets/google_logo.png
+    - assets/jantar.jpg
+    - assets/poker.jpg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

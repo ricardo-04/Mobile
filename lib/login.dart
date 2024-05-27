@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'contaCreate.dart';
+import 'eventosPage.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -171,6 +172,12 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     // Implementar a lógica de login
+              
+                    // Navegar para a nova página
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => EventosPage()), // Substitua NovaPagina pela classe da sua nova página
+                    );
                   }
                 },
                 style: ButtonStyle(
