@@ -13,8 +13,8 @@ class EventosPage extends StatelessWidget {
           ),
         ],
       ),
-      drawer: Drawer(
-        // Adicione seu Drawer aqui
+      drawer: const Drawer(
+        //adicionar Drawer 
         // Exemplo:
         // child: ListView(
         //   children: <Widget>[
@@ -32,7 +32,7 @@ class EventosPage extends StatelessWidget {
               children: [
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('PRÓXIMOS EVENTOS'),
+                  child: const Text('PRÓXIMOS EVENTOS'),
                 ),
                 ElevatedButton(
                   onPressed: () {},
@@ -41,8 +41,8 @@ class EventosPage extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding:  EdgeInsets.all(8.0),
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Explorar Eventos',
@@ -89,7 +89,7 @@ class EventosPage extends StatelessWidget {
         IconData? icon,
       }) {
     return Card(
-      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -98,21 +98,21 @@ class EventosPage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               date,
-              style: TextStyle(fontSize: 16, color: Colors.grey),
+              style: const TextStyle(fontSize: 16, color: Colors.grey),
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Text(
               title,
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
               subtitle,
-              style: TextStyle(fontSize: 16, color: Colors.grey),
+              style: const TextStyle(fontSize: 16, color: Colors.grey),
             ),
           ),
           Padding(
@@ -124,7 +124,7 @@ class EventosPage extends StatelessWidget {
                 children: [
                   Text(buttonText),
                   if (icon != null) ...[
-                    SizedBox(width: 5),
+                    const SizedBox(width: 5),
                     Icon(icon),
                   ],
                 ],
