@@ -13,15 +13,79 @@ class EventosPage extends StatelessWidget {
           ),
         ],
       ),
-      drawer: const Drawer(
-        //adicionar Drawer 
-        // Exemplo:
-        // child: ListView(
-        //   children: <Widget>[
-        //     DrawerHeader(child: Text('Header')),
-        //     ListTile(title: Text('Item 1')),
-        //   ],
-        // ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text(
+                'SOFTINSA',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.location_city),
+              title: Text('Polos'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.local_hospital),
+              title: Text('Saúde'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.sports),
+              title: Text('Desporto'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.school),
+              title: Text('Formação'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Habitação'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.directions_bus),
+              title: Text('Transporte'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.local_activity),
+              title: Text('Lazer'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.restaurant),
+              title: Text('Gastronomia'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.help),
+              title: Text('Ajuda & Suporte'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: Text('Definições'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.info),
+              title: Text('Informação/Avisos'),
+              onTap: () {},
+            ),
+          ],
+        ),
       ),
       body: Column(
         children: [
@@ -136,4 +200,3 @@ class EventosPage extends StatelessWidget {
     );
   }
 }
-
