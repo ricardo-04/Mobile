@@ -1,157 +1,190 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/drawer/definicoes.dart';
 
 class EventosPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Image.asset('assets/logo-softinsa.png', height: kToolbarHeight),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.add),
-            onPressed: () {},
+    return Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [
+              Colors.blue,
+              Color.fromARGB(255, 13, 58, 95)
+            ],
           ),
-        ],
-      ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-              child: Text(
-                'SOFTINSA',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
-              ),
-            ),
-            ListTile(
-              leading: Icon(Icons.location_city),
-              title: Text('Polos'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.local_hospital),
-              title: Text('Saúde'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.sports),
-              title: Text('Desporto'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.school),
-              title: Text('Formação'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.home),
-              title: Text('Habitação'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.directions_bus),
-              title: Text('Transporte'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.local_activity),
-              title: Text('Lazer'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.restaurant),
-              title: Text('Gastronomia'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.help),
-              title: Text('Ajuda & Suporte'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.settings),
-              title: Text('Definições'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.info),
-              title: Text('Informação/Avisos'),
-              onTap: () {},
-            ),
-          ],
         ),
-      ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ElevatedButton(
-                  onPressed: () {},
-                  child: const Text('PRÓXIMOS EVENTOS'),
+        child: Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            title: Container(
+              height: kToolbarHeight,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
+                  colors: [
+                    Color.fromRGBO(33, 150, 243, 1),
+                    Color.fromARGB(255, 13, 58, 95)
+                  ],
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text('EVENTOS JÁ OCORRIDOS'),
-                ),
-              ],
-            ),
-          ),
-          const Padding(
-            padding:  EdgeInsets.all(8.0),
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: 'Explorar Eventos',
-                prefixIcon: Icon(Icons.search),
-                border: OutlineInputBorder(),
               ),
+              child: Image.asset('assets/logo-softinsa.png',
+                  height: kToolbarHeight),
             ),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.add),
+                onPressed: () {},
+              ),
+            ],
           ),
-          Expanded(
+          //////////////////DRAWER////////////////////
+          drawer: Drawer(
             child: ListView(
-              children: [
-                _buildEventCard(
-                  context,
-                  '14 Dezembro 2023',
-                  'Jantar de Natal Softinsa',
-                  'assets/jantar.jpg',
-                  'Inscrições até 10/12',
-                  'DETALHES',
+              padding: EdgeInsets.zero,
+              children: <Widget>[
+                const DrawerHeader(
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(33, 150, 243, 1),
+                  ),
+                  child: Text(
+                    'SOFTINSA',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                    ),
+                  ),
                 ),
-                _buildEventCard(
-                  context,
-                  '3 Janeiro 2024',
-                  'Jogatina de Poker sem o Chefe (hehe)',
-                  'assets/poker.jpg',
-                  'Casa Da Sorte',
-                  'APENAS CONVIDADOS',
-                  icon: Icons.lock,
+                ListTile(
+                  leading: const Icon(Icons.location_city),
+                  title: const Text('Polos'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: const Icon(Icons.local_hospital),
+                  title: const Text('Saúde'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: const Icon(Icons.sports),
+                  title: const Text('Desporto'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: const Icon(Icons.school),
+                  title: const Text('Formação'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: const Icon(Icons.home),
+                  title: const Text('Habitação'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: const Icon(Icons.directions_bus),
+                  title: const Text('Transporte'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: const Icon(Icons.local_activity),
+                  title: const Text('Lazer'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: const Icon(Icons.restaurant),
+                  title: const Text('Gastronomia'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: const Icon(Icons.help),
+                  title: const Text('Ajuda & Suporte'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: const Icon(Icons.settings),
+                  title: const Text('Definições'),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SettingsPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.info),
+                  title: const Text('Informação/Avisos'),
+                  onTap: () {},
                 ),
               ],
             ),
           ),
-        ],
-      ),
-    );
+          body: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('PRÓXIMOS EVENTOS'),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('EVENTOS JÁ OCORRIDOS'),
+                    ),
+                  ],
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Explorar Eventos',
+                    prefixIcon: Icon(Icons.search),
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: ListView(
+                  children: [
+                    _buildEventCard(
+                      context,
+                      '14 Dezembro 2023',
+                      'Jantar de Natal Softinsa',
+                      'assets/jantar.jpg',
+                      'Inscrições até 10/12',
+                      'DETALHES',
+                    ),
+                    _buildEventCard(
+                      context,
+                      '3 Janeiro 2024',
+                      'Jogatina de Poker sem o Chefe (hehe)',
+                      'assets/poker.jpg',
+                      'Casa Da Sorte',
+                      'APENAS CONVIDADOS',
+                      icon: Icons.lock,
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ));
   }
 
   Widget _buildEventCard(
-      BuildContext context,
-      String date,
-      String title,
-      String imagePath,
-      String subtitle,
-      String buttonText, {
-        IconData? icon,
-      }) {
+    BuildContext context,
+    String date,
+    String title,
+    String imagePath,
+    String subtitle,
+    String buttonText, {
+    IconData? icon,
+  }) {
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
       child: Column(
