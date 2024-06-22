@@ -42,7 +42,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-    #http:
+  http:
   #firebase_auth:
   #firebase_core:
   

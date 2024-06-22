@@ -18,7 +18,8 @@ class SettingsPage extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color.fromARGB(255, 53, 92, 124), Color.fromARGB(255, 214, 235, 252)],
+            colors: [Colors.blue,
+              Color.fromARGB(255, 13, 58, 95)],
           ),
         ),
         child: ListView(
