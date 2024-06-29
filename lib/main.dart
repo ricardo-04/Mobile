@@ -4,6 +4,7 @@ import 'login.dart';
 import 'welcome_page.dart';
 import 'contaCreate.dart';
 import 'eventosPage.dart';
+import 'criarEvento.dart';
 import 'package:flutter_application_1/drawer/definicoes.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 //import 'package:firebase_core/firebase_core.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         '/contaCreate': (context) => ContaCreate(), //contaCreate
         '/eventosPage': (context) => EventosPage(), //eventosPage
         '/definicoes': (context) => SettingsPage(), //definicoes
+        '/criarEvento': (context) => CreateEventPage(), //criarEvento
       },
     );
   }

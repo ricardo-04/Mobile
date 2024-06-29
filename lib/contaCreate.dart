@@ -72,7 +72,6 @@ class _ContaCreateState extends State<ContaCreate> {
           'NIF': _nifController.text,
           'MORADA': _moradaController.text,
           'NTELEMOVEL': _nTelemovelController.text,
-          'DATAINICIO': _dataInicioController.text,
           'ID_CENTRO': _selectedCentro ?? '',
         }),
       );
@@ -263,22 +262,6 @@ class _ContaCreateState extends State<ContaCreate> {
                   if (int.tryParse(value) == null) {
                     return 'Por favor, insira um número válido';
                   }
-                  return null;
-                },
-              ),
-              const SizedBox(height: 20.0),
-              TextFormField(
-                controller: _dataInicioController,
-                decoration: const InputDecoration(
-                  labelText: 'Data de Início',
-                  hintText: 'yyyy-mm-dd',
-                ),
-                keyboardType: TextInputType.datetime,
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Por favor, insira a data de início';
-                  }
-                  // Adicionar validação de formato de data se necessário
                   return null;
                 },
               ),

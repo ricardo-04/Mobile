@@ -43,6 +43,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   http:
+  shared_preferences:
+  image_picker: 
+  google_maps_flutter:
+  #google_sign_in:
   #firebase_auth:
   #firebase_core:
   

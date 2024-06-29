@@ -34,8 +34,6 @@ class SettingsPage extends StatelessWidget {
             SettingsOption(title: 'As minhas inscrições', icon: Icons.assignment),
             SettingsOption(title: 'Convites para Eventos', icon: Icons.event_available),
             SectionTitle(title: 'Gostos'),
-            SettingsOption(title: 'Pessoas com Gosto', icon: Icons.people),
-            SettingsOption(title: 'Estabelecimentos com Gosto', icon: Icons.store),
           ],
         ),
       ),
